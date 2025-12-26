@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        /* This makes the page fill the Nokia screen */
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #000; }
         
-        /* THIS IS YOUR BORDER CODE */
+        /* This loads Telegram inside your frame */
+        iframe { width: 100%; height: 100%; border: none; }
+
+        /* THE BORDER MAGIC: This draws a thick yellow line whenever you move the D-Pad focus */
         :focus { 
-            outline: 6px solid #F8D121 !important; 
-            outline-offset: -6px; 
-            box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+            outline: 8px solid #FFFF00 !important; 
+            outline-offset: -8px; 
+            box-shadow: 0 0 20px #FFFF00;
         }
     </style>
 </head>
